@@ -1,0 +1,67 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif!important;
+ 	-webkit-font-smoothing: antialiased;
+ 	height: 100%;
+}
+*, :after, :before
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.-trans-block
+{
+	display: block;
+	background-color: #fff;
+}
+
+/*********
+* banner
+**********/
+.banner
+{
+	width: 100%;
+	height: 100%;
+}
+.parallax
+{
+	position: fixed;
+	z-index: -1;
+}
+.parallax-img
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.parallax-img:before
+{
+	background-position-x: center;
+	position: absolute;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url(../../images/sample1/4f0eb225.mountain.jpg);
+}
+
+/*********
+* top
+**********/
+.top
+{
+	position: relative;
+	display: table;
+	table-layout: fixed;
+}
+.top.-trans-block
+{
+	background-color: transparent;
+}
