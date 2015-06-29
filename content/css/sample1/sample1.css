@@ -21,6 +21,62 @@ html, body
 }
 
 /*********
+* header
+**********/
+.header
+{
+	height: 65px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+.header .container
+{
+	width: 970px;
+	margin: 0 auto;
+}
+.header .menu
+{
+	float: right;
+}
+.header .menu .menu-item
+{
+	float: left;
+	list-style: none;
+	margin-top: 10px;
+}
+.header .menu .menu-item a
+{
+	color: #fbfbfb;
+	font-size: 1em;
+	text-decoration: none;
+	padding: 15px;
+	margin: 0 2px;
+	border-bottom: 1px solid transparent;
+	-webkit-transition: all ease-in-out 200ms;
+	-o-transition: all ease-in-out 200ms;
+	transition: all ease-in-out 200ms;
+}
+.header .menu .menu-item a:hover
+{
+	border-bottom: 1px solid #fff;
+}
+.header .menu .menu-item.login a
+{
+	border: rgba(255,255,255,.3) solid 1px;
+	-webkit-border-radius: 2.5px;
+	border-radius: 2.5px;
+	margin: 0 2px 0 5px;
+	padding: 8px 15px;
+}
+.header .menu .menu-item.login a:hover
+{
+	border-color: rgba(255,255,255,1);
+}
+
+/*********
 * banner
 **********/
 .banner
