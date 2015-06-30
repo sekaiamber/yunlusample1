@@ -13,11 +13,31 @@ html, body
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 .-trans-block
 {
 	display: block;
 	background-color: #fff;
+}
+.container
+{
+	width: 970px;
+	margin: 0 auto;
+}
+.tbc
+{
+	display: table-cell;
+}
+.-h1
+{
+	font-size: 80px;
+}
+.-h2
+{
+	font-size: 40px;
+}
+.btn
+{
+	cursor: pointer;
 }
 
 /*********
@@ -31,11 +51,6 @@ html, body
 	left: 0;
 	width: 100%;
 	z-index: 10;
-}
-.header .container
-{
-	width: 970px;
-	margin: 0 auto;
 }
 .header .menu
 {
@@ -116,8 +131,81 @@ html, body
 	position: relative;
 	display: table;
 	table-layout: fixed;
+	color: #fbfbfb;
 }
 .top.-trans-block
 {
 	background-color: transparent;
+}
+.top .tbc
+{
+	/*height: 300px;*/
+	width: 100%;
+	padding: 0;
+	border: 0;
+	vertical-align: middle;
+	text-align: center;
+}
+.top .login
+{
+	margin-top: 50px;
+}
+.top .login-input
+{
+	width: 250px;
+	margin-right: 5px;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.top .login-input:focus
+{
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.top .submit
+{
+	width: 80px;
+	border-color: #2e6da4;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top,#1984FA,#0068F9);
+	background: -o-linear-gradient(top,#1984FA,#0068F9);
+}
+.top .-h1,
+.top .-h2
+{
+	font-family: SourceHanSansSC-ExtraLight,Lato,"Helvetica Neue",Arial,Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+	font-weight: 100;
+	line-height: 1.5em;
+}
+
+
+@font-face {
+	font-family: SourceHanSansSC-ExtraLight;
+	src: url(fonts/SourceHanSansSC-ExtraLight.eot);
+	src: url(fonts/SourceHanSansSC-ExtraLight.eot?#iefix-hdf3wh) format('embedded-opentype'),url(fonts/SourceHanSansSC-ExtraLight.woff) format('woff'),url(fonts/SourceHanSansSC-ExtraLight.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: SourceHanSansSC-Light;
+	src: url(fonts/SourceHanSansSC-Light.eot);
+	src: url(fonts/SourceHanSansSC-Light.eot?#iefix) format("embedded-opentype"),url(fonts/SourceHanSansSC-Light.woff) format("woff"),url(fonts/SourceHanSansSC-Light.ttf) format("truetype");
+	font-style: normal;
+	font-weight: 400;
 }
