@@ -37,6 +37,20 @@ html, body, button, a
 {
 	cursor: pointer;
 }
+@media (max-width: 1000px) {
+	.container
+	{
+		width: auto;
+	}
+	.-h1
+	{
+		font-size: 40px;
+	}
+	.-h2
+	{
+		font-size: 20px;
+	}
+}
 
 /*********
 * translation
@@ -85,7 +99,7 @@ html, body, button, a
 	float: left;
 	background: url(../../images/sample1/logo.png);
 	cursor: pointer;
-	margin-top: 15px;
+	margin: 15px 0 0 15px;
 }
 .header .menu
 {
@@ -109,6 +123,17 @@ html, body, button, a
 	-o-transition: all ease-in-out 200ms;
 	transition: all ease-in-out 200ms;
 }
+.header .menu .-s-size
+{
+	display: none;
+	color: #fdfdfd;
+	cursor: pointer;
+}
+.header .menu .menu-bt
+{
+	font-size: 32px;
+	margin: 12px;
+}
 .header .menu .menu-item a:hover
 {
 	border-bottom: 1px solid #fff;
@@ -124,6 +149,33 @@ html, body, button, a
 .header .menu .menu-item.login a:hover
 {
 	border-color: rgba(255,255,255,1);
+}
+.header .menu .menu-list
+{
+	position: absolute;
+	width: 100%;
+	top: 65px;
+	left: 0;
+	background: rgba(0,0,0,.2);
+}
+.header .menu .menu-list div
+{
+	padding: 10px;
+	text-align: center;
+}
+.header .menu .menu-list div:hover
+{
+	background: rgba(0,0,0,.2);	
+}
+@media (max-width: 700px) {
+	.header .menu ul
+	{
+		display: none;
+	}
+	.header .menu .-s-size
+	{
+		display: block;
+	}
 }
 
 /*********
@@ -233,6 +285,55 @@ html, body, button, a
 	font-weight: 100;
 	line-height: 1.5em;
 }
+@media (max-width: 500px) {
+	.top .login-input,
+	.top .submit
+	{
+		width: 90%;
+		margin-top: 20px;
+	}
+}
+
+/*********
+* 2 content
+**********/
+.-content-2
+{
+	color: #434a54;
+	text-align: center;
+}
+.-content-2 .-h2
+{
+	padding: 80px 0 20px 0;
+}
+.container-2c
+{
+	float: left;
+	width: 25%;
+	padding: 0 30px;
+}
+.container-2c .iconfont
+{
+	font-size: 80px;
+	margin: 60px 0 30px 0;
+}
+.container-2c .title
+{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+	.container-2c
+	{
+		width: 50%;
+	}
+}
+@media (max-width: 600px) {
+	.container-2c
+	{
+		width: 100%;
+	}
+}
 
 /*********
 * font
@@ -265,3 +366,8 @@ html, body, button, a
 }
 .icon-down:before { content: "\e600"; }
 .icon-up:before { content: "\e601"; }
+.icon-list:before { content: "\e602"; }
+.icon-contacts:before { content: "\e603"; }
+.icon-cloud:before { content: "\e604"; }
+.icon-safe:before { content: "\e605"; }
+.icon-message:before { content: "\e606"; }
