@@ -1,6 +1,13 @@
 $(document).ready(function(){
+    headerInit();
     parallaxInit();
 });
+
+function headerInit() {
+    $(".header .menu-bt").click(function(){
+        $(".header .menu-list").slideToggle(300);
+    });
+};
 
 function parallaxInit() {
     $parallax = $(".parallax").first();
