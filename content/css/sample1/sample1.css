@@ -336,6 +336,28 @@ html, body, button, a
 }
 
 /*********
+* 3 content
+**********/
+.-content-3-left,
+.-content-3-right
+{
+	float: left;
+	width: 50%;
+	height: 550px;
+}
+.-content-3-left
+{
+	display: table;
+	text-align: center;
+	background: rgba(78, 82, 102, 1);
+}
+.-content-3-left div
+{
+	vertical-align: middle;
+	margin-top: 97px;
+}
+
+/*********
 * font
 **********/
 @font-face {
