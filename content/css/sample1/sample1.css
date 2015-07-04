@@ -301,6 +301,8 @@ html, body, button, a
 {
 	color: #434a54;
 	text-align: center;
+	background: rgba(33, 102, 184, 1);
+	color: white;
 }
 .-content-2 .-h2
 {
@@ -343,7 +345,7 @@ html, body, button, a
 {
 	float: left;
 	width: 50%;
-	height: 550px;
+	height: 500px;
 }
 .-content-3-left
 {
@@ -354,7 +356,29 @@ html, body, button, a
 .-content-3-left div
 {
 	vertical-align: middle;
-	margin-top: 97px;
+	margin-top: 70px;
+}
+.-content-3-right
+{
+	padding: 50px;
+}
+.-content-3-right .-h2
+{
+	padding-bottom: 40px;
+}
+.-content-3-right p
+{
+	padding-bottom: 80px;
+}
+@media (max-width: 820px) {
+	.-content-3-left
+	{
+		display: none;
+	}
+	.-content-3-right
+	{
+		width: 100%;
+	}
 }
 
 /*********
