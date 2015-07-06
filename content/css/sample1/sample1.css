@@ -301,7 +301,7 @@ html, body, button, a
 {
 	color: #434a54;
 	text-align: center;
-	background: rgba(33, 102, 184, 1);
+	background: rgba(54, 105, 174, 1);
 	color: white;
 }
 .-content-2 .-h2
@@ -384,7 +384,34 @@ html, body, button, a
 /*********
 * 4 content
 **********/
-
+.-content-4
+{
+	background: rgba(54, 105, 174, 1);
+	color: #fff;
+}
+.container-4c
+{
+	float: left;
+	width: 33%;
+	text-align: center;
+	padding: 60px;
+}
+.container-4c .iconfont
+{
+	font-size: 80px;
+}
+.container-4c .title
+{
+	font-weight: bold;
+	font-size: 1.6em;
+	line-height: 2.0;
+}
+@media (max-width: 600px) {
+	.container-4c
+	{
+		width: 100%;
+	}
+}
 
 /*********
 * font
@@ -422,3 +449,6 @@ html, body, button, a
 .icon-cloud:before { content: "\e604"; }
 .icon-safe:before { content: "\e605"; }
 .icon-message:before { content: "\e606"; }
+.icon-contacts-2:before { content: "\e607"; }
+.icon-upload:before { content: "\e608"; }
+.icon-finish:before { content: "\e609"; }
