@@ -361,6 +361,7 @@ html, body, button, a
 .-content-3-right
 {
 	padding: 50px;
+	background: #F7F7F7;
 }
 .-content-3-right .-h2
 {
@@ -386,8 +387,7 @@ html, body, button, a
 **********/
 .-content-4
 {
-	background: rgba(54, 105, 174, 1);
-	color: #fff;
+
 }
 .container-4c
 {
@@ -399,6 +399,7 @@ html, body, button, a
 .container-4c .iconfont
 {
 	font-size: 80px;
+	color: rgba(0, 158, 255, 1);
 }
 .container-4c .title
 {
