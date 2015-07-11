@@ -1,6 +1,7 @@
 $(document).ready(function(){
     headerInit();
     parallaxInit();
+    transInit();
 });
 
 function headerInit() {
@@ -16,4 +17,11 @@ function parallaxInit() {
         top *= 0.4;
         $parallax.css('transform', 'translateY(-' + top + 'px)')
     });
+};
+
+function transInit() {
+    $(".top .-trans-bt").click(function(){
+        var top = $(".-content-2").first().position().top;
+        $('body,html').animate({ scrollTop: top }, 1200);
+    })
 };

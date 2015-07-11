@@ -69,15 +69,16 @@ html, body, button, a
 	bottom: 0;
 	font-size: 60px;
 	line-height: 1.5;
-	background: rgba(255,255,255,.2);
+	background: rgba(33,33,33,.4);
 	cursor: pointer;
 	-webkit-transition: all ease-in-out 200ms;
 	-o-transition: all ease-in-out 200ms;
 	transition: all ease-in-out 200ms;
+	color: #fff;
 }
 .-trans-bt:hover
 {
-	background: rgba(255,255,255,.3);
+	background: rgba(33,33,33,.6);
 }
 
 /*********
@@ -113,7 +114,7 @@ html, body, button, a
 }
 .header .menu .menu-item a
 {
-	color: #fbfbfb;
+	color: #333;
 	font-size: 1em;
 	text-decoration: none;
 	padding: 15px;
@@ -126,7 +127,7 @@ html, body, button, a
 .header .menu .-s-size
 {
 	display: none;
-	color: #fdfdfd;
+	color: #333;
 	cursor: pointer;
 }
 .header .menu .menu-bt
@@ -140,7 +141,7 @@ html, body, button, a
 }
 .header .menu .menu-item.login a
 {
-	border: rgba(255,255,255,.3) solid 1px;
+	border: rgba(33,33,33,.3) solid 1px;
 	-webkit-border-radius: 2.5px;
 	border-radius: 2.5px;
 	margin: 0 2px 0 5px;
@@ -148,7 +149,7 @@ html, body, button, a
 }
 .header .menu .menu-item.login a:hover
 {
-	border-color: rgba(255,255,255,1);
+	border-color: rgba(33,33,33,1);
 }
 .header .menu .menu-list
 {
@@ -207,7 +208,7 @@ html, body, button, a
 	width: 100%;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-image: url(../../images/sample1/4f0eb225.mountain.jpg);
+	background-image: url(../../images/sample1/bk.jpg);
 }
 
 /*********
@@ -218,7 +219,7 @@ html, body, button, a
 	position: relative;
 	display: table !important;
 	table-layout: fixed;
-	color: #fbfbfb;
+	color: #333;
 }
 .top.-trans-block
 {
@@ -469,6 +470,17 @@ html, body, button, a
 	font-weight: bold;
 	line-height: 1.5;
 	padding-bottom: 30px;
+}
+
+/*********
+* 7 content
+**********/
+.-content-7
+{
+	background-color: #152235;
+	text-align: center;
+	padding: 50px 0;
+	color: #fff;
 }
 
 /*********
